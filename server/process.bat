@@ -1,0 +1,6 @@
+@ECHO OFF
+
+SET SERVERPATH=%~dp0
+SET PYTHONPATH=%SERVERPATH%;%SERVERPATH%\..\thirdparty
+
+START python -B %SERVERPATH%\process.py %1 %2 %3 %4 %5 %6 %7 %8 %9
